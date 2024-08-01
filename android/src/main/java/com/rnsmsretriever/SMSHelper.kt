@@ -10,7 +10,7 @@ import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.OnSuccessListener
 import android.os.Build
 
-import static android.content.Context.RECEIVER_EXPORTED
+import android.content.Context.RECEIVER_EXPORTED
 
 
 class SMSHelper(private val mContext: ReactApplicationContext) {
