@@ -51,7 +51,7 @@ class RnSmsRetrieverModule(reactContext: ReactApplicationContext) : ReactContext
   @ReactMethod
   fun requestPhoneNumber(promise: Promise?) {
     val context = reactApplicationContext
-    val activity = currentActivity
+    val activity = reactApplicationContext.currentActivity
     val eventListener: ActivityEventListener = mPhoneNumberHelper.activityEventListener
     context.addActivityEventListener(eventListener)
     mPhoneNumberHelper.setListener(object : PhoneNumberHelper.Listener {
